@@ -3,7 +3,7 @@ import pandas as pd
 import import sys
 from multimethod import multimethod
 
-class SimilarityMeasures:
+class measure:
 
     def __init__(self):
         self.p=10
