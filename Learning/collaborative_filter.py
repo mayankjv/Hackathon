@@ -9,12 +9,9 @@ def recommend(ind,row):
     for i in range(1, row):
         if (int(data[ind][i]) >= 3 and int(data[1][i] == 0)):
             print(data[0][i])
-data = pd.read_csv('FILE', header=None)
-
-print(data)
-
+data = pd.read_csv('train.csv')
+#print(data)
 data = data.replace(np.nan, 0)
-
 try:
     col = len(data[0])
     row = len(list(data))
